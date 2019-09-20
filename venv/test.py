@@ -3,8 +3,6 @@
 
 
 
-
-
 '''
 answer = 0
 meta_parser = re.compile('<meta(.+?)/>')

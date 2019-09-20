@@ -39,3 +39,7 @@ a_list = [item for sublist in ini_list for item in sublist]
 # b_list = [item for item in sublist for sublist in ini_list]
 print(a_list)
 # print(b_list)
+
+print(list(map(len, ['abc', 'de', 'fghi'])))
+
+print(list(map(sum, zip([1, 2, 3], [4, 5, 6]))))
