@@ -5,13 +5,11 @@
 print((lambda x, y: x + y)(1, 2))
 print((lambda x, y, z: (x + y) if (z == 0) else (x * y))(1, 2, 3))
 
-
 pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
 print(sum(x[0] for x in [(1, 'a'), (2, 'b'), (3, 'c')]))
 print(sum(x for x, _ in pairs))
 
 print([x for x in range(11) if x % 2 == 0])
-
 
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -21,11 +19,11 @@ odd = list(filter(lambda x: (x % 2 == 1), nums))
 evens = list(filter(lambda x: True if (x % 2 == 0) else False, nums))
 name = (lambda x: "one" if x == 1 else("two" if x == 2 else ("three" if x == 3 else "None")))(3)
 
-print(sorted_nums)
-print(odd)
-print(evens)
-print(squares)
-print(name)
+print("정렬:", sorted_nums)
+print("홀수:", odd)
+print("짝수:", evens)
+print("제곱:", squares)
+print("이름:", name)
 
 
 print([x.capitalize() for x in ['cat', 'dog', 'cow']])
