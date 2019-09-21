@@ -98,3 +98,5 @@ print(Dict['Dict1']['name'])
 
 # Prints value corresponding to key 'age' in Dict2
 print(Dict['Dict2']['age'])
+
+print({x: x**2 for x in (2, 4, 6)})

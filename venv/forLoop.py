@@ -23,3 +23,6 @@ print(cnt)
 print(string.count('o'))
 # between index 0 and 11 and returns an integer
 print(string.count("Python", 0, 12))
+
+
+print([i for i in reversed(range(1, 10, 2))])

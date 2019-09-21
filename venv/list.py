@@ -51,4 +51,5 @@ print(reduce((lambda x, y : x + y), [x for x in range(1,101)]))
 
 print(np.sum([x for x in range(1,101)]))
 
-
+# set
+print({x for x in 'abracadabra' if x not in 'abc'})
