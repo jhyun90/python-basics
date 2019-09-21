@@ -7,22 +7,63 @@ and second list contains second element of each sublists.
 
 # initializing nested lists
 ini_list = [[1, 2], [4, 3], [45, 65], [223, 2]]
-
 print("Initial list: " + str(ini_list))
+
 
 # Using map, zip()
 res1, res2 = map(list, zip(*ini_list))
-
 print("Final lists: ", res1, ",", res2)
+
 
 # Using list comprehension
 res1 = [i[0] for i in ini_list]
 res2 = [i[1] for i in ini_list]
-
 print("Final lists: ", res1, ",", res2)
 print("Final lists: ", [res1, res2])
 
+
 # Using operator.itemgetter()
+
+
+#
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+transposed = []
+
+for i in range(len(matrix[0])):
+    column = []
+
+    for j in range(len(matrix)):
+        column.append(matrix[j][i])
+
+    transposed.append(column)
+
+print("transposed[1]:", transposed)
+
+transposed = []
+
+for i in range(len(matrix[0])):
+    column = []
+
+    for row in matrix:
+        column.append(row[i])
+
+    transposed.append(column)
+
+print("transposed[2]:", transposed)
+
+transposed = []
+
+for i in range(len(matrix[0])):
+    transposed.append([row[i] for row in matrix])
+
+print("transposed[3]:", transposed)
+
+print("transposed[4]:", [[row[i] for row in matrix] for i in range(len(matrix[0]))])
 
 
 # Merge two lists into list of tuples
@@ -36,6 +77,7 @@ def merge_zip(list1, list2):
 
     return merged_list
 
+
 # Using enumerate(), alternative to zip()
 def merge_enum(list1, list2):
     merged_list = [(v1, v2) for i1, v1 in enumerate(list1)
@@ -43,14 +85,11 @@ def merge_enum(list1, list2):
 
     return merged_list
 
-
 input_list1 = [1, 4, 45, 223]
 input_list2 = [2, 3, 65, 2]
 
 print(merge_zip(input_list1, input_list2))
 print(merge_enum(input_list1, input_list2))
 
-a = merge_zip(input_list1, input_list2)
 
 # Using map(), lambda
-

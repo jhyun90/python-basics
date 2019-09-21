@@ -2,14 +2,18 @@
 
 # from collections import Counter
 
-print((lambda x, y: x + y)(1, 2))
-print((lambda x, y, z: (x + y) if (z == 0) else (x * y))(1, 2, 3))
+print("합:", (lambda x, y: x + y)(1, 2))
+print("합:", (lambda x, y, z: (x + y) if (z == 0) else (x * y))(1, 2, 3))
 
 pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
-print(sum(x[0] for x in [(1, 'a'), (2, 'b'), (3, 'c')]))
-print(sum(x for x, _ in pairs))
+print("합:", sum(x[0] for x in [(1, 'a'), (2, 'b'), (3, 'c')]))
+print("합:", sum(x for x, _ in pairs))
 
-print([x for x in range(11) if x % 2 == 0])
+print("짝수:", [x for x in range(11) if x % 2 == 0])
+print("음수:", [x for x in range(-5, 5) if x < 0])
+
+print("(x, y):", [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y])
+
 
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -38,6 +42,7 @@ print(list(filter(lambda x: (x == "".join(reversed(x))), my_list)))
 
 # The underscore(_) refers to a variable that you don't need to refer to explicitly
 print((lambda _: list(map(lambda _: _ // 2, _)))([1,2,3,4,5,6,7,8,9,10]))
+# print(list(map(lambda x: x // 2, [1,2,3,4,5,6,7,8,9,10])))
 
 
 def f(x):

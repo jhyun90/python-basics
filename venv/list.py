@@ -1,6 +1,8 @@
 # Check if element exists in list of lists
 
 from itertools import chain
+from functools import reduce
+import numpy as np
 
 ini_list = [
     [1, 2, 5, 10, 7],
@@ -41,7 +43,12 @@ print("a_list:", a_list)
 # print(b_list)
 
 # print(list(map(int, input().split())))
-
 print(list(map(len, ['abc', 'de', 'fghi'])))
-
 print(list(map(sum, zip([1, 2, 3], [4, 5, 6]))))
+
+print(reduce((lambda x, y : x + y), range(1, 11)))
+print(reduce((lambda x, y : x + y), [x for x in range(1,101)]))
+
+print(np.sum([x for x in range(1,101)]))
+
+
