@@ -20,6 +20,7 @@ nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 sorted_nums = sorted(nums, key=lambda x: x % 2)
 squares = list(map(lambda x: x * x, nums))
 odd = list(filter(lambda x: (x % 2 == 1), nums))
+
 evens = list(filter(lambda x: True if (x % 2 == 0) else False, nums))
 name = (lambda x: "one" if x == 1 else("two" if x == 2 else ("three" if x == 3 else "None")))(3)
 

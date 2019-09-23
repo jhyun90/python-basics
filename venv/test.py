@@ -1,4 +1,96 @@
+
+# NAVER_1
+
+'''
+record = [
+    "RECEIVE abcd@naver.com",
+    "RECEIVE zzkn@naver.com",
+    "DELETE",
+    "RECEIVE qwerty@naver.com",
+    "SAVE",
+    "RECEIVE QwerTY@naver.com"
+]
+'''
+
+# record = [
+#     "RECEIVE abcd@naver.com",
+#     "RECEIVE zzkn@naver.com",
+#     "DELETE",
+#     "RECEIVE qwerty@naver.com",
+#     "SAVE",
+#     "SAVE",
+#     "DELETE",
+#     "RECEIVE QwerTY@naver.com",
+#     "SAVE"
+# ]
 #
+# # ["abcd@naver.com", "qwerty@naver.com", "QwerTY@naver.com"]
+#
+# tmp_stack = []
+# result = []
+#
+# for i in range(len(record)):
+#     record[i] = record[i].split()
+#     print(record[i])
+#
+#     cmd = record[i][0]
+#     # print(cmd)
+#
+#     if cmd == "RECEIVE":
+#         tmp_stack.append(record[i][1])
+#         print("tmp", tmp_stack)
+#
+#     # print("tmp", tmp_stack)
+#
+#     elif cmd == "DELETE":
+#         if len(tmp_stack) != 0:
+#             del tmp_stack[-1]
+#
+#         else:
+#             continue
+#
+#     elif cmd == "SAVE":
+#         result += tmp_stack
+#         tmp_stack = []
+#
+# print("tmp", tmp_stack)
+# print("final", result)
+
+
+
+
+# NAVER_2
+
+def solution(n):
+    answer = 0
+    begin = 1
+    end = 10
+    result = []
+    # result.append(1)
+
+    for i in range(begin, end):
+        mul = i
+        for j in range(i + 1, end + 1):
+            # print(i, j)
+            mul *= j
+            result.append(mul)
+
+        i += 1
+
+    result = sorted(set(result))
+    print(result)
+    # print(len(result))
+
+    if len(result) < 10**6 and max(result) < 10**12:
+        print(result)
+        answer = result[n - 1]
+
+    return answer
+
+n = 10
+print(solution(n))
+
+
 
 
 
