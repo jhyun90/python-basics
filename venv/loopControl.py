@@ -10,6 +10,17 @@ for letter in "geeksforgeeks":
 
 print()
 
+for letter in "geeksforgeeks":
+    if letter == 'e' or letter == 's':
+        print(letter)
+
+    else:
+        continue
+
+    print("-- after continue --")
+
+print()
+
 # Break Statement
 # It brings control out of the loop.
 
