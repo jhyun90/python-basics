@@ -8,6 +8,8 @@ for letter in "geeksforgeeks":
         continue
     print(letter)
 
+print()
+
 # Break Statement
 # It brings control out of the loop.
 

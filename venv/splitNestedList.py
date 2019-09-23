@@ -32,6 +32,8 @@ matrix = [
     [9, 10, 11, 12]
 ]
 
+print("matrix:", matrix)
+
 transposed = []
 
 for i in range(len(matrix[0])):
@@ -80,16 +82,22 @@ def merge_zip(list1, list2):
 
 # Using enumerate(), alternative to zip()
 def merge_enum(list1, list2):
-    merged_list = [(v1, v2) for i1, v1 in enumerate(list1)
-                   for i2, v2 in enumerate(list2) if i1 == i2]
+    merged_list = [(v1, v2) for i1, v1 in enumerate(list1) for i2, v2 in enumerate(list2) if i1 == i2]
+
+    return merged_list
+
+def merge_enum_multiply(list1, list2):
+    merged_list = [(v1 * v2) for i1, v1 in enumerate(list1) for i2, v2 in enumerate(list2)]
 
     return merged_list
 
 input_list1 = [1, 4, 45, 223]
 input_list2 = [2, 3, 65, 2]
 
+print(input_list1, input_list2)
 print(merge_zip(input_list1, input_list2))
 print(merge_enum(input_list1, input_list2))
+print(merge_enum_multiply(input_list1, input_list2))
 
 
 # Using map(), lambda
