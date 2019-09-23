@@ -12,7 +12,7 @@ print("합:", sum(x for x, _ in pairs))
 print("짝수:", [x for x in range(11) if x % 2 == 0])
 print("음수:", [x for x in range(-5, 5) if x < 0])
 
-print("(x, y):", [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y])
+print("(x, y):", [(x, y) for x in [1, 2, 3] for y in [3,1,4] if x != y])
 
 
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
