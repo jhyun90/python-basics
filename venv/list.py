@@ -47,8 +47,8 @@ print(list(map(len, ['abc', 'de', 'fghi'])))
 print(list(map(sum, zip([1, 2, 3], [4, 5, 6]))))
 
 print(reduce((lambda x, y : x + y), range(1, 11)))
-print(reduce((lambda x, y : x + y), [x for x in range(1,101)]))
-print(np.sum([x for x in range(1,101)]))
+print(reduce((lambda x, y : x + y), [x for x in range(1, 101)]))
+print(np.sum([x for x in range(1, 101)]))
 
 # set
 print({x for x in 'abracadabra' if x not in 'abc'})
