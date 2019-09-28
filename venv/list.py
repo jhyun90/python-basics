@@ -4,6 +4,8 @@ from itertools import chain
 from functools import reduce
 import numpy as np
 
+print(tuple(range(3)))
+
 ini_list = [
     [1, 2, 5, 10, 7],
     [4, 3, 4, 3, 21],
