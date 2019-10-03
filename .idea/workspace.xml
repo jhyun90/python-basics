@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cccd5d9-d801-4404-8b0a-f7945371f1f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569920030342</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="initial commit">
+      <created>1570113247278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1570113247279</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -281,5 +287,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
