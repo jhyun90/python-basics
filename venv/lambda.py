@@ -51,7 +51,7 @@ def f(x):
 
 
 def modify_list(L, fn):
-    for idx, v in (L):
+    for idx, v in enumerate(L):
         L[idx] = fn(v)
 
 
